@@ -1,0 +1,263 @@
+.theme-dark {
+  --background-primary: #000000; /* Pure OLED black */
+  --background-primary-alt: #0d001a; /* Very dark purple */
+  --background-secondary: #0a0014; /* Subtle dark purple */
+  --background-secondary-alt: #120020; /* Slightly brighter dark purple */
+  --text-normal: #d8b4ff; /* Soft lavender for normal text */
+  --text-faint: #a685c7; /* Muted purple */
+  --text-title-h1: #e6c7ff; /* Bright lavender for headings */
+  --text-title-h2: #d8b4ff;
+  --text-title-h3: #cba3f2;
+  --text-title-h4: #b88ae6;
+  --text-title-h5: #a670d9;
+  --text-link: #bb86fc; /* Violet for links */
+  --text-a: #c296ff; /* Light purple */
+  --text-a-hover: #e2b6ff; /* Bright hover purple */
+  --text-mark: rgba(186, 104, 200, 0.8); /* Purple highlight */
+  --pre-code: #0d001a; /* Dark purple for code block background */
+  --text-highlight-bg: rgba(186, 104, 200, 0.3); /* Highlight background */
+  --interactive-accent: #b480ff; /* Purple for interactive elements */
+  --interactive-before: #552b6f; /* Muted dark purple */
+  --background-modifier-border: #6c4680; /* Border accent */
+  --blockquote-border: #9268a4; /* Muted border purple */
+  --text-accent: #ff99ff; /* Bright accent */
+  --interactive-accent-rgb: #b480ff; /* RGB equivalent of interactive accent */
+  --font-family-editor: Avenir;
+  --font-family-preview: Avenir Next;
+}
+
+/* Specific Element Updates */
+#graph-view-canvas .links {
+  stroke: var(--interactive-accent-rgb) !important;
+}
+
+.theme-dark strong {
+  color: rgb(230, 199, 255, 0.8); /* Soft lavender for bold text */
+  font-weight: bolder;
+}
+
+.theme-dark em {
+  color: #b880ff; /* Muted purple for emphasis */
+}
+
+mark {
+  background-color: var(--text-mark) !important;
+  padding-top: 4px;
+  padding-bottom: 1px;
+}
+
+/**********************/
+/* Links and Brackets */
+/**********************/
+a,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link,
+.cm-formatting-link {
+  color: var(--text-a) !important;
+  text-decoration: none !important;
+  font-family: Avenir !important;
+}
+
+a:hover,
+.internal-link:hover {
+  color: var(--text-a-hover) !important;
+  text-decoration: none !important;
+}
+
+a:not(.internal-link) {
+  font-style: italic; /* Differentiation for external links */
+}
+
+/* Blockquote Updates */
+.cm-quote /* for editor */ {
+  color: var(--text-normal) !important;
+}
+
+blockquote /* for preview */ {
+  border-color: var(--blockquote-border) !important;
+}
+
+/* Code Blocks */
+pre code {
+  padding: 6px !important;
+  line-height: normal;
+  display: block;
+  background-color: var(--pre-code) !important;
+}
+
+/* Inline code for editor and preview */
+code,
+.cm-inline-code {
+  background-color: #5e4291; /* Vibrant dark purple */
+  color: #5a0bba;
+  border-radius: 4px; /* Rounded corners for a softer look */
+  padding: 2px 4px; /* Slight padding for visibility */
+  font-weight: 600; /* Slightly bold to make it stand out */
+  font-family: "Courier New", monospace; /* Distinct monospace font */
+}
+
+
+/* Headings */
+.cm-header-1,
+.markdown-preview-view h1 {
+  color: #e6c7ff; /* Bright lavender */
+}
+
+.cm-header-2,
+.markdown-preview-view h2 {
+  color: #d8b4ff; /* Slightly darker lavender */
+}
+
+.cm-header-3,
+.markdown-preview-view h3 {
+  color: #cba3f2; /* Medium lavender */
+}
+
+.cm-header-4,
+.markdown-preview-view h4 {
+  color: #b88ae6; /* Deep lavender */
+}
+
+.cm-header-5,
+.markdown-preview-view h5 {
+  color: #a670d9; /* Dark purple */
+}
+
+/* Internal link font fix */
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link {
+  font-family: var(--font-family-editor, Avenir, sans-serif) !important; /* Use your preferred font */
+  font-size: 15px; /* Optional: Match the normal text size */
+  font-weight: normal; /* Optional: Reset weight if it looks off */
+}
+
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link {
+  font-size: 1rem; /* Scales better with mobile screen settings */
+}
+
+code,
+.cm-inline-code {
+  padding: 1px 3px; /* Slightly smaller padding for inline code on mobile */
+}
+
+a,
+.internal-link {
+  padding: 2px 4px; /* Improves usability on touchscreens */
+}
+
+@media (max-width: 768px) {
+  blockquote {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto; /* Add horizontal scrolling */
+  }
+}
+
+/* Ensure sliding panes are not affected */
+.workspace-split.mod-vertical {
+  min-width: unset !important;
+  overflow-x: auto;
+}
+
+/* Tweak outliner hover effects */
+.plugin-outliner .tree-item:hover {
+  background-color: var(--background-secondary-alt);
+}
+
+.app-container {
+  font-family: var(--font-family-preview);
+}
+
+/* Graph View Background */
+#graph-view-canvas {
+  background-color: #0c0417; /* OLED black */
+}
+
+/* Node Colors */
+#graph-view-canvas .node {
+  fill: #7b47a8; /* Dark purple */
+}
+
+/* Line Colors */
+#graph-view-canvas .links {
+  stroke: #9e8aff; /* Light purple lines */
+}
+
+/* Hovered or Focused Node */
+#graph-view-canvas .node.focused {
+  fill: #c49fff; /* Brighter purple for focus */
+}
+
+/* Adjust Node Labels (Optional) */
+#graph-view-canvas text {
+  fill: #e6e1ff; /* Light lavender */
+  font-family: Avenir, sans-serif; /* Match your font */
+}
+
+/* Tag Style in Editor */
+.cm-hashtag {
+  color: #9e8aff; /* Light purple */
+  background-color: rgba(75, 0, 130, 0.2); /* Subtle indigo highlight */
+  font-family: Avenir; /* Match other text */
+}
+
+/* Tag Style in Preview */
+.tag {
+  color: #c49fff; /* Brighter purple */
+  background-color: rgba(128, 0, 128, 0.2); /* Purple background highlight */
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* General button styling */
+button,
+.toggle-btn,
+.cm-button,
+.theme-dark .setting-item .setting-item-btn {
+  background-color: #2b0f3f; /* Dark purple background */
+  color: #f1d0ff; /* Light lavender text color */
+  border: 1px solid #573c67; /* Purple border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+button:hover,
+.toggle-btn:hover,
+.cm-button:hover,
+.theme-dark .setting-item .setting-item-btn:hover {
+  background-color: #3d1f60; /* Slightly lighter purple on hover */
+  color: #ffffff; /* White text on hover */
+  border-color: #8e55d4; /* Lighter purple border */
+}
+
+/* Settings panel background */
+.theme-dark .settings-container {
+  background-color: #1a0f29; /* Deep purple background */
+  color: #d1c5f7; /* Lighter text for readability */
+}
+
+/* Active buttons in the settings */
+.theme-dark .setting-item .setting-item-btn.is-active {
+  background-color: #573c67; /* Active button background */
+  color: #f1d0ff; /* Text color for active button */
+  border-color: #8e55d4; /* Active button border */
+}
+
+/* Button icons */
+.theme-dark .setting-item .setting-item-btn .icon {
+  color: #b88cff; /* Lighter purple for icons */
+}
+
+.theme-dark .setting-item .setting-item-btn:hover .icon {
+  color: #ffffff; /* White icon color on hover */
+}
+
