@@ -42,7 +42,7 @@ Feel free to modify the theme to suit your preferences! The theme is built using
 - Works with **Dark** modes.
 - Optimized for use with mobile devices and tablets.
 
-![Mobile View](link-to-image)  
+![Mobile View](https://github.com/J73809/Void_Eclipse/blob/main/Void%20Eclipse/assets/mobile_view.png)  
 *The theme is also fully responsive and works well on mobile devices.*
 
 ## Contributing
