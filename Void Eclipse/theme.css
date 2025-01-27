@@ -37,7 +37,7 @@
 }
 
 .theme-dark em {
-  color: #b880ff; /* Muted purple for emphasis */
+  color: #b880ff;
 }
 
 mark {
@@ -46,9 +46,7 @@ mark {
   padding-bottom: 1px;
 }
 
-/**********************/
 /* Links and Brackets */
-/**********************/
 a,
 .internal-link,
 .cm-hmd-internal-link,
@@ -66,7 +64,7 @@ a:hover,
 }
 
 a:not(.internal-link) {
-  font-style: italic; /* Differentiation for external links */
+  font-style: italic;
 }
 
 /* Blockquote Updates */
@@ -89,42 +87,42 @@ pre code {
 /* Inline code for editor and preview */
 code,
 .cm-inline-code {
-  background-color: #5e4291; /* Vibrant dark purple */
+  background-color: #5e4291;
   color: #5a0bba;
-  border-radius: 4px; /* Rounded corners for a softer look */
-  padding: 2px 4px; /* Slight padding for visibility */
-  font-weight: 600; /* Slightly bold to make it stand out */
-  font-family: "Courier New", monospace; /* Distinct monospace font */
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-weight: 600;
+  font-family: "Courier New", monospace;
 }
 
 
 /* Headings */
 .cm-header-1,
 .markdown-preview-view h1 {
-  color: #e6c7ff; /* Bright lavender */
+  color: #e6c7ff; 
 }
 
 .cm-header-2,
 .markdown-preview-view h2 {
-  color: #d8b4ff; /* Slightly darker lavender */
+  color: #d8b4ff; 
 }
 
 .cm-header-3,
 .markdown-preview-view h3 {
-  color: #cba3f2; /* Medium lavender */
+  color: #cba3f2;
 }
 
 .cm-header-4,
 .markdown-preview-view h4 {
-  color: #b88ae6; /* Deep lavender */
+  color: #b88ae6;
 }
 
 .cm-header-5,
 .markdown-preview-view h5 {
-  color: #a670d9; /* Dark purple */
+  color: #a670d9;
 }
 
-/* Internal link font fix */
+/* Internal link*/
 .internal-link,
 .cm-hmd-internal-link,
 .cm-link {
@@ -204,15 +202,15 @@ a,
 
 /* Tag Style in Editor */
 .cm-hashtag {
-  color: #9e8aff; /* Light purple */
-  background-color: rgba(75, 0, 130, 0.2); /* Subtle indigo highlight */
-  font-family: Avenir; /* Match other text */
+  color: #9e8aff;
+  background-color: rgba(75, 0, 130, 0.2);
+  font-family: Avenir;
 }
 
 /* Tag Style in Preview */
 .tag {
-  color: #c49fff; /* Brighter purple */
-  background-color: rgba(128, 0, 128, 0.2); /* Purple background highlight */
+  color: #c49fff;
+  background-color: rgba(128, 0, 128, 0.2);
   padding: 2px 4px;
   border-radius: 4px;
   font-size: 13px;
@@ -224,25 +222,25 @@ button,
 .toggle-btn,
 .cm-button,
 .theme-dark .setting-item .setting-item-btn {
-  background-color: #2b0f3f; /* Dark purple background */
-  color: #f1d0ff; /* Light lavender text color */
-  border: 1px solid #573c67; /* Purple border */
-  border-radius: 4px; /* Rounded corners */
+  background-color: #2b0f3f;
+  color: #f1d0ff;
+  border: 1px solid #573c67;
+  border-radius: 4px;
 }
 
 button:hover,
 .toggle-btn:hover,
 .cm-button:hover,
 .theme-dark .setting-item .setting-item-btn:hover {
-  background-color: #3d1f60; /* Slightly lighter purple on hover */
-  color: #ffffff; /* White text on hover */
-  border-color: #8e55d4; /* Lighter purple border */
+  background-color: #3d1f60;
+  color: #ffffff;
+  border-color: #8e55d4;
 }
 
 /* Settings panel background */
 .theme-dark .settings-container {
-  background-color: #1a0f29; /* Deep purple background */
-  color: #d1c5f7; /* Lighter text for readability */
+  background-color: #1a0f29; 
+  color: #d1c5f7;
 }
 
 /* Active buttons in the settings */
@@ -254,10 +252,10 @@ button:hover,
 
 /* Button icons */
 .theme-dark .setting-item .setting-item-btn .icon {
-  color: #b88cff; /* Lighter purple for icons */
+  color: #b88cff;
 }
 
 .theme-dark .setting-item .setting-item-btn:hover .icon {
-  color: #ffffff; /* White icon color on hover */
+  color: #ffffff;
 }
 
