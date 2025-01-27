@@ -32,7 +32,7 @@
 }
 
 .theme-dark strong {
-  color: rgb(230, 199, 255, 0.8); /* Soft lavender for bold text */
+  color: rgb(230, 199, 255, 0.8);
   font-weight: bolder;
 }
 
@@ -176,27 +176,27 @@ a,
 
 /* Graph View Background */
 #graph-view-canvas {
-  background-color: #0c0417; /* OLED black */
+  background-color: #0c0417;
 }
 
 /* Node Colors */
 #graph-view-canvas .node {
-  fill: #7b47a8; /* Dark purple */
+  fill: #7b47a8;
 }
 
 /* Line Colors */
 #graph-view-canvas .links {
-  stroke: #9e8aff; /* Light purple lines */
+  stroke: #9e8aff;
 }
 
 /* Hovered or Focused Node */
 #graph-view-canvas .node.focused {
-  fill: #c49fff; /* Brighter purple for focus */
+  fill: #c49fff;
 }
 
 /* Adjust Node Labels (Optional) */
 #graph-view-canvas text {
-  fill: #e6e1ff; /* Light lavender */
+  fill: #e6e1ff;
   font-family: Avenir, sans-serif; /* Match your font */
 }
 
